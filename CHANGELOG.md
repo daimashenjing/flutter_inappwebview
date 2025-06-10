@@ -1,5 +1,5 @@
 ## 5.8.0
-
+- 兼容
 - Merged "fix: xcode 15 related bug" [#1790](https://github.com/pichillilorenzo/flutter_inappwebview/pull/1790) (thanks to [nesquikm](https://github.com/nesquikm))
 
 ## 5.7.2+3
