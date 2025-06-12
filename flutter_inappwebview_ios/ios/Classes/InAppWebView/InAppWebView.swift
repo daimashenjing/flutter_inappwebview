@@ -1755,7 +1755,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
         })
     }
     
-    @available(iOS 14.5, *)
+   @available(iOS 14.5, *)
    public func download(_ download: WKDownload, decideDestinationUsing response: URLResponse, suggestedFilename: String, completionHandler: @escaping @MainActor @Sendable (URL?) -> Void) {
         if let url = response.url, let useOnDownloadStart = settings?.useOnDownloadStart, useOnDownloadStart {
             let downloadStartRequest = DownloadStartRequest(url: url.absoluteString,
