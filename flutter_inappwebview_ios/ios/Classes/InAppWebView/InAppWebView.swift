@@ -1429,6 +1429,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
         }
     }
 
+    @available(iOS 14.0, *)
     @discardableResult
     public func _evaluateJavaScript(_ javaScriptString: String, in frame: WKFrameInfo?, in contentWorld: WKContentWorld, completionHandler: ((Any?, Error?) -> Void)? = nil) -> Void {
         if let applePayAPIEnabled = settings?.applePayAPIEnabled, applePayAPIEnabled {
