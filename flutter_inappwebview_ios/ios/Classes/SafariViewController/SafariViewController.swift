@@ -95,6 +95,7 @@ public class SafariViewController: SFSafariViewController, SFSafariViewControlle
         })
     }
     
+    @MainActor
     public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         close(result: nil)
     }

@@ -355,7 +355,8 @@ public class InAppBrowserWebViewController: UIViewController, InAppBrowserDelega
         closeButton = UIBarButtonItem(barButtonSystemItem: barButtonSystemItem, target: self, action: #selector(close))
     }
     
-    public func didChangeTitle(title: String?) {
+   @MainActor
+   public func didChangeTitle(title: String?) {
         guard let _ = title else {
             return
         }
